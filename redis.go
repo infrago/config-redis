@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bamgoo/bamgoo"
-	base "github.com/bamgoo/base"
-	"github.com/bamgoo/config"
+	"github.com/infrago/infra"
+	base "github.com/infrago/base"
+	"github.com/infrago/config"
 
 	"github.com/pelletier/go-toml/v2"
 	"github.com/redis/go-redis/v9"
@@ -19,7 +19,7 @@ import (
 type redisConfigDriver struct{}
 
 func init() {
-	bamgoo.Register("redis", &redisConfigDriver{})
+	infra.Register("redis", &redisConfigDriver{})
 }
 
 func (d *redisConfigDriver) Load(params base.Map) (base.Map, error) {

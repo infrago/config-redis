@@ -1,2 +1,2 @@
 # config-redis
-bamgoo redis config driver.
+infrago redis config driver.

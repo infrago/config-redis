@@ -1,4 +1,4 @@
-module github.com/bamgoo/config-redis
+module github.com/infrago/config-redis
 
 go 1.25.3
 
